@@ -1,0 +1,17 @@
+<div id="{{include.groupName}}" class="carousel slide">
+  <div class="carousel-inner">
+    {% for myimage in include.groupFiles %}
+      <div class="carousel-item {% if forloop.first %}active{%endif%}">
+        <img src="{{site.baseurl}}{{ myimage.path }}" class="d-block w-100" alt="Slide {{forloop.index}} of {{include.groupFiles | size}}" title="Slide {{forloop.index}} of {{include.groupFiles | size}}">
+      </div>  
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" data-bs-target="#{{include.groupName}}" type="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" data-bs-target="#{{include.groupName}}" type="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>

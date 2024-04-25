@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand" href="/index.html">Hispanics in Computing</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        {% for link in site.data.navigation %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{{link.link|absolute_url}}">{{link.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+</nav>

@@ -1,0 +1,14 @@
+destination: "~/Development/Hispanics/_site"
+title: Hispanics in Computing
+email: perez.quinones@uncc.edu
+description: >-
+  Hispanics in Computing
+
+# For deployment
+#baseurl: "/hispanicsincomputing"
+baseurl: ""
+
+# The base hostname & protocol for your site
+url: "https://hispanicsincomputing.org" 
+
+exclude: ["documentation", "bin"]

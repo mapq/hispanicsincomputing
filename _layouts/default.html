@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hispanic in Computing Group">
+    <meta name="author" content="mapq">
+    <title>{{page.title}}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link href="{{site.baseurl}}/assets/css/basic.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include navigation.html %}
+
+    <div class="row">
+      <div class="col">
+        <!-- append root to page -->
+        {% assign path = "/assets/images/" | append: page.banner %}
+        <img src="{{path|absolute_url}}" width="100%">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">{{page.title}}</h1>
+          {% if page.bovnavigation == true %}
+          {% include bof-navigation.md %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h3>{{page.subtitle}}</h3>
+          {{content}}
+        </div>
+        <div class="col-md-4">
+        {% include sidebar.html %}
+        </div>  <!-- col-md-4-->
+      </div>  <!-- row -->
+
+      <hr>
+
+    </div> <!-- /container -->
+
+    <footer class="container">
+      <p>&copy; Hispanics in Computing 2014-today</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+  </body>
+</html>
