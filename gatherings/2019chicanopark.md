@@ -6,7 +6,7 @@ confdate: September 18-21, 2019
 bofdate: September 19, 2019
 location: Chicano Park, San Diego, CA
 event: bof
-year: 2019
+year: 2019.1
 bovnavigation: true
 banner: Tapia2019/banner.jpg
 
@@ -24,15 +24,6 @@ Chicano Park is a National Historic Landmark and has the largest collection of o
     </div>
 </div>  <!-- row -->
 
-<div class="row">
-    <div class="col-md-4">
-      <p>Images from the BOF session at Tapia/San Diego.</p>
-    </div>
-    <div class="col-md-8">
-    {% assign orgF = site.static_files | where_exp:"image", "image.path contains 'images/Tapia2019/bof'"  %}
-    {% include carousel.html groupName="carouselBOF" groupFiles=orgF %}
-    </div>
-</div>  <!-- row -->
 
 <div class="row">
     <div class="col-md-4">

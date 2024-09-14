@@ -8,7 +8,7 @@ bofdate: Sept 15, 2023
 location: Dallas, TX
 event: bof
 bovnavigation: true
-year: 2023
+year: 2023.1
 ---
 
 

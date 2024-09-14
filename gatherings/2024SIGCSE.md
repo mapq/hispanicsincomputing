@@ -9,7 +9,7 @@ time: Fri 22 Mar 2024 12:45 - 13:35
 location: Portland, OR
 event: bof
 bovnavigation: true
-year: 2024
+year: 2024.0
 ---
 
 

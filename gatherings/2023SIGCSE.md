@@ -8,7 +8,7 @@ bofdate: March 16, 2023
 location: Toronto, Ontario, CA
 bovnavigation: true
 event: bof
-year: 2023
+year: 2023.0
 ---
 
 

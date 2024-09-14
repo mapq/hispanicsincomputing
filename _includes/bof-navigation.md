@@ -47,5 +47,7 @@
   {% endif %}
 {% endfor %}
 
+{% assign prevyr = prevyr | split: '.' %}
+{% assign nextyr = nextyr | split: '.' %}
 
-<a name="top" id="top"></a> {% if page.year <= items.first.year %}{% else %} <a href="{{site.baseurl}}{{prev.url}}">← {{prevyr}}</a> &#124; {% endif %}<a href="index.html">Gatherings</a> {% if page.year == items.last.year %}{% else %} &#124; <a href="{{site.baseurl}}{{next.url}}">{{nextyr}} →</a>{% endif %}
+<a name="top" id="top"></a> {% if page.year <= items.first.year %}{% else %} <a href="{{site.baseurl}}{{prev.url}}">← {{prevyr[0]}}</a> &#124; {% endif %}<a href="index.html">Gatherings</a> {% if page.year == items.last.year %}{% else %} &#124; <a href="{{site.baseurl}}{{next.url}}">{{nextyr[0]}} →</a>{% endif %}
